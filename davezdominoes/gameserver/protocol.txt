@@ -1,0 +1,130 @@
+GameClient GameServer
+----------  ----------
+POKE (rpc)
+            OK
+
+            UPDATE :
+                 rules "solitaire"
+                 status [empty|waiting|ready|started|finished]
+                 players: 
+                   [login1], [name1], [avatarurl1], [numBones]
+                   [login2], [name2], [avatarurl2], [numBones]
+                   [login3], [name3], [avatarurl3], [numBones]
+                 view: [public|private]
+                 watchers:
+                   [login4], [name4], [avatarurl4]
+
+JOIN (rpc)
+            OK
+            ERROR
+
+            UPDATE : GameDetails (pub)
+
+LEAVE (rpc)
+            OK
+            ERROR
+
+            UPDATE : GameDetails (pub)
+
+KICK (rpc)
+            OK
+            ERROR
+
+            UPDATE : GameDetails (pub)
+
+START (rpc)
+            OK
+            ERROR
+
+            UPDATE : GameDetails (pub)
+
+STOP (rpc)
+            OK
+            ERROR
+
+            UPDATE : GameDetails (pub)
+
+
+GameClient  GameServer
+----------  ----------
+READY (rpc)
+            OK : GameDetails
+                 [player1]
+                    [#index] [xpos, ypos]
+                    [#index] [xpos, ypos]
+                 [player2]
+                    [#index] [xpos, ypos]
+            ERROR
+
+            GO [player1] (pub)
+                 msg
+
+SHOW [domino] (rpc)
+            OK
+            ERROR
+            SHOWN [domino] (pub)
+
+MOVE [xpos, ypos] (pub)
+
+DROP (pub)
+
+PLAY [domino] (rpc)
+            OK
+            ERROR
+
+            PLAYED [domino] [xpos, ypos] (pub)
+
+PASS (rpc)
+            OK
+            ERROR
+
+DRAW (rpc)
+            OK [domino]
+            ERROR
+
+GIVEUP (rpc)
+            OK
+
+            GAMEOVER (pub)
+
+    
+Layouts
+--------
+         H1
+
+
+
+H4                  H2
+
+
+
+         H3
+
+
+
+     H1      H5
+
+
+H8                  H2
+
+
+H4                  H6
+
+
+     H7      H3
+
+
+
+
+     H1      H5
+
+
+H4                  H2
+
+
+
+     H6      H3
+
+
+
+

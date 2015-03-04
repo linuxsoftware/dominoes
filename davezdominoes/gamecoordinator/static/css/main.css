@@ -1,0 +1,311 @@
+/*-----------------------------------------------------------------------*/
+/* Site wide style                                                       */
+/*-----------------------------------------------------------------------*/
+/* @import url(//fonts.googleapis.com/css?family=Permanent+Marker); */
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Permanent Marker'), local('PermanentMarker'), 
+    url(//fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMrg27BfaRSB61e9iDGqjWqk.ttf),
+    url(/static/css/permanentmarker.ttf) 
+    format('truetype');
+}
+html {
+    background:            black;
+    height:                100%;
+}
+body { 
+    background:            black;
+    color:                 #242824;
+    margin:                0;
+    border:                0;
+    padding:               0;
+    height:                100%;
+    font-size:             small;
+    font-family:           "Liberation Sans",Verdana,Geneva,Arial,sans-serif;
+}
+#wrapper {
+    position:              relative;
+    width:                 100%;
+    min-height:            100%;
+    background:            #f9f8f7;
+}
+header {
+    position:              relative;
+    top:                   0;
+    left:                  0;
+    height:                50px;
+    margin:                0;
+    padding:               0 20px;
+    border-bottom:         solid 2px #2E8B57;
+    background:            black;
+    z-index:               2;
+}
+header h1 {
+    margin:                0;
+    padding:               0 10px;
+    font-weight:           bold;
+    font-size:             30px;
+    font-family:           "Permanent Marker", cursive;
+    font-variant:          small-caps;
+}
+header h1 a:hover {
+    color:                 white;
+    text-decoration:       none; 
+}
+header a         { color:         white; }
+header a:link    { text-decoration:  none; }
+header a:hover   { text-decoration:  underline; }
+header a:visited {  }
+header a:active  { background-color: #777; color: white; }
+
+header img.avatar {
+    position:              absolute;
+    top:                   0px;
+    right:                 160px;
+    background:            url(/static/img/pyramid-50x50.png);
+    background-repeat:     no-repeat;
+}
+header .account-info-links {
+    position:              absolute;
+    top:                   10px;
+    right:                 10px;
+    color:                 white;
+    width:                 140px;
+    white-space:           nowrap;
+}
+header .account-info-links .current-user {
+    height:                16px;
+}
+header .account-info-links .logout,
+header .account-info-links .login {
+    height:                16px;
+}
+footer {
+    position:              absolute;
+    bottom:                0;
+    left:                  0;
+    width:                 100%;
+    height:                25px;
+    margin:                0;
+    overflow:              hidden;
+    border-top:            solid 1px #2E8B57;
+    background:            black;
+    color:                 white;
+}
+footer a {
+    color:                 white;
+}
+footer .bottom-right {
+    position:              absolute;
+    bottom:                0;
+    right:                 0;
+    height:                20px;
+    margin-right:          10px;
+}
+main {
+    position:              relative;
+    padding:               20px 20px 75px 20px;
+    max-width:             700px;
+    margin:                0 auto;
+}
+section {
+    background:            #ededed;
+    padding:               10px;
+}
+form {
+    margin:                0;
+    padding:               0 0 0 5px;
+}
+.buttons  {
+    padding-top:           10px;
+}
+.field  {
+    padding-bottom:        10px;
+}
+.field label  {
+    display:               inline-block;
+    font-weight:           bold;
+    width:                 120px;
+}
+.field label:before  {
+}
+.field label.is-required:before  {
+    content:               "*";
+    color:                 red;
+    float:                 left;
+    margin-left:          -1ex;
+}
+.is-required-key {
+    padding-left:          20px;
+}
+.is-required-key span.red-star {
+    color:                 red;
+    font-weight:           bold;
+}
+.field input  {
+    width:                 280px;
+}
+.field select  {
+    width:                 280px;
+}
+.field textarea  {
+    width:                 280px;
+    height:                110px;
+}
+.field input,
+.field select,
+.field textarea {
+    vertical-align:        middle;
+}
+form .field ul {
+    width:                 280px;
+    list-style-type:       none;
+    margin:                0;
+    padding:               0;
+    display:               inline;
+}
+form .field ul li {
+    width:                 180px;
+    display:               inline;
+}
+form .field input[type="checkbox"],
+form .field input[type="radio"] {
+    width:                 auto;
+}
+form .field ul li label {
+    display:               inline;
+    margin-right:          20px;
+}
+form .field input#oldPassword {
+    margin:                20px 0;
+}
+.tool-bar {
+    overflow:              hidden;
+    position:              relative;
+    padding:               20px 0px 10px 0px;
+    float:                 right;
+}
+.tool-bar input {
+    margin-right:          2px;
+}
+input#hiddenBtn {
+    position:              absolute; 
+    left:                  -100%;
+}
+hr {
+    height:                0px;
+    border-top:            1px solid #0000ff;
+    border-bottom:         1px solid #7f7fff;
+} 
+
+button, 
+input[type="reset"], 
+input[type="button"], 
+input[type="submit"] {
+    -moz-appearance:       none;
+    -webkit-appearance:    none;
+    appearance:            none;
+    border:                2px outset buttonface;
+    -webkit-border-radius: 4px;
+    -moz-border-radius:    4px;
+    border-radius:         4px;
+    padding:               0 6px;
+    font-variant:          small-caps;
+}
+textarea,
+input[type="text"],
+input[type="password"] {
+    -moz-appearance:       none;
+    -webkit-appearance:    none;
+    appearance:            none;
+    border:                2px inset #ccc;
+    background-color:      white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius:    4px;
+    border-radius:         4px;
+    padding:               2px 4px;
+} 
+form select:disabled,
+textarea:disabled,
+input[type="text"]:disabled,
+input[type="password"]:disabled {
+    background-color:      #ededed;
+} 
+.clear-float {
+    clear:                 both;
+    margin:                0;
+    padding:               0;
+}
+
+a          { color: #114611; }
+a:link     { text-decoration: none; }
+a:visited  {  }
+a:hover    { text-decoration: underline; }
+a:active   { background-color: #114611; color: white }
+a:hover.imglink,
+a.imglink { 
+    background-color:      transparent; 
+    text-decoration:       none;
+}
+a img {
+    border:                none;
+}
+h1 {
+    margin:                1px 0 10px 0;
+    letter-spacing:        -0.3px;
+    font-family:           "Liberation Sans",Verdana,Geneva,Arial,sans-serif;
+    font-size:             26px;
+    color:                 maroon;
+}
+h2 {
+    margin:                1px 0 10px 0;
+    font-family:           "Liberation Sans",Verdana,Geneva,Arial,sans-serif;
+    font-size:             20px;
+    color:                 darkgreen;
+}
+h3 {
+    margin:                1px 0 5px 0;
+    letter-spacing:        -0.3px;
+    font-family:           "Liberation Sans",Verdana,Geneva,Arial,sans-serif;
+    font-size:             14px;
+    color:                 #333;
+}
+h4 {
+    margin:                15px 0 5px 0;
+    font-family:           "Liberation Sans",Verdana,Geneva,Arial,sans-serif;
+    font-size:             13px;
+}
+ul {
+    margin:                10px 0 10px 0;
+}
+.alert-message {
+    margin:                10px 20px 10px 20px;
+    padding:               10px 15px 10px 15px;
+    background-color:      #ffff6f;
+    border:                1px solid #8d8d3e;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    position:              relative;
+}
+.alert-message .close {
+    position:              absolute;
+    top:                   5px;
+    right:                 20px;
+    line-height:           20px;
+    text-decoration:       none;
+    outline:               0;
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+       -moz-transition: opacity 0.15s linear;
+         -o-transition: opacity 0.15s linear;
+            transition: opacity 0.15s linear;
+}
+.fade.in {
+    opacity: 1;
+}
+

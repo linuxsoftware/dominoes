@@ -1,0 +1,20 @@
+/*-----------------------------------------------------------------------*/
+/* User profile specific styles                                          */
+/*-----------------------------------------------------------------------*/
+#new-user,
+#edit-user,
+#change-password {
+    max-width:              450px;
+}
+#edit-user .avatar-label {
+    vertical-align:         top;
+}
+#edit-user img.gravatar {
+    vertical-align:         top;
+}
+#edit-user .explain-gravatar {
+    width:                  230px;
+    display:                inline-block;
+    padding:                10px 0 0 10px;
+    font-size:              11px;
+}

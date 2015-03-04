@@ -1,0 +1,100 @@
+/*-----------------------------------------------------------------------*/
+/* Login specific styles                                                 */
+/*-----------------------------------------------------------------------*/
+#login-wrapper {
+    width:                 320px;
+    height:                250px;
+}
+#login-tablet {
+    position:              absolute;
+    top:                   50%;
+    left:                  50%;
+    width:                 310px;
+    height:                230px;
+    padding:               0px;
+    margin:                -103px 0 0 -155px;
+    /* border: dotted 1px grey; */
+}
+#login-tablet .field input  {
+    width:                 200px;
+}
+#login-tablet .message {
+    height:                30px;
+    color:                 brown;
+    font-size:             16px;
+    padding-bottom:        10px;
+}
+#login-tablet a.newuser {
+    margin-right:          20px;
+}
+#login-tablet a.forgotpwd {
+    margin-right:          55px;
+}
+#login-tablet label {
+    display:               inline-block;
+    width:                 80px;
+    font-size:             15px;
+    font-weight:           bold;
+    color: rgba(100,100,100, 0.8);
+    text-shadow: 1px 2px 2px #f9f8f7,
+                 0 0 0       #000,
+                 1px 2px 2px #f9f8f7;
+}
+
+#alt-login-tablet {
+    position:              absolute;
+    bottom:                30px;
+    left:                  0;
+    height:                30px;
+    width:                 100%;
+    padding:               0;
+    margin:                0;
+    text-align:            center;
+    /* border-top: dotted 1px green; */
+}
+#alt-login-tablet a {
+    margin:                 0 0 0 5px;
+}
+#alt-login-tablet .signin {
+    margin:                 0 0 0 0px;
+    padding:                0 2px;
+    color:                  #114611;
+    display:                inline-block;
+    cursor:                 pointer;
+}
+#alt-login-tablet .signin:hover .text {
+    text-decoration:        underline;
+}
+#alt-login-tablet .signin:active {
+    color:                  white;
+    background:             #114611;
+}
+#alt-login-tablet .icon {
+    width:                  16px;
+    height:                 16px;
+    display:                inline-block;
+    vertical-align:         middle;
+    background-repeat:      no-repeat;
+    background-position:    left center;
+}
+#google-signin .icon {
+    width:                  17px;
+    background-image:       url(/static/img/gplus-red.png);
+}
+#google-signin:active .icon {
+    background-image:       url(/static/img/gplus-white.png);
+}
+#facebook-signin .icon {
+    width:                  18px;
+    background-image:       url(/static/img/fb-bluebg.png);
+}
+#facebook-signin:active .icon {
+    background-image:       url(/static/img/fb-clearbg.png);
+}
+#github-signin .icon {
+    width:                  18px;
+    background-image:       url(/static/img/octocat.png);
+}
+#github-signin:active .icon {
+    background-image:       url(/static/img/octocat-inv.png);
+}

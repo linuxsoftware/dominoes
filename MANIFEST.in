@@ -1,0 +1,6 @@
+include *.txt *.ini *.cfg *.rst
+recursive-include davezdominoes/commoncode *
+recursive-include davezdominoes/gameclients *
+recursive-include davezdominoes/gameserver *
+recursive-include davezdominoes/gamecoordinator *.ico *.png *.css *.gif *.jpg *.pt *.txt *.mak *.mako *.js *.html *.xml
+global-exclude *.pyc

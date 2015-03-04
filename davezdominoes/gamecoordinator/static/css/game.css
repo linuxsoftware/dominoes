@@ -1,0 +1,81 @@
+/*-----------------------------------------------------------------------*/
+/* Game specific styles                                                  */
+/*-----------------------------------------------------------------------*/
+#games-list {
+    max-width:              none;
+    text-align:             center;
+}
+.games-padding {
+    height:                 1px;
+    width:                  250px;
+    display:                inline-block;
+    margin:                 0 10px 10px 0;
+    vertical-align:         top;
+}
+.game-tablet {
+    height:                 220px;
+    width:                  225px;
+    display:                inline-block;
+    padding:                10px 10px 10px 15px;
+    margin:                 0 10px 10px 0;
+    border:                 solid 2px transparent;
+    border-radius:          10px;
+    vertical-align:         top;
+    text-align:             left;
+    position:               relative;
+    overflow:               hidden;
+    font-size:              13px;
+}
+#game-tablet1         { background: #9fcee0;  }
+#game-tablet1.playing { border-color: blue;   }
+#game-tablet2         { background: #ade09f;  }
+#game-tablet2.playing { border-color: green;  }
+#game-tablet3         { background: #d29fe0;  }
+#game-tablet3.playing { border-color: purple; }
+#game-tablet4         { background: #ffff6f;  }
+#game-tablet4.playing { border-color: orange; }
+#game-tablet5         { background: salmon;   }
+#game-tablet5.playing { border-color: red;    }
+#game-tablet6         { background: #ba9c8a;  }
+#game-tablet6.playing { border-color: brown;  }
+
+.game-tablet ul.players {
+    list-style-type:       none;
+    padding:               0 0 0 5px;
+}
+.game-tablet .players li {
+    margin-bottom:          5px;
+}
+.game-tablet .players li:first-child {
+    font-weight:            bold;
+}
+.game-tablet .players li img {
+    margin:                 0 10px 0 0;
+    background:             url(/static/img/pyramid-16x16.png);
+    background-repeat:      no-repeat;
+    vertical-align:         top;
+}
+.game-tablet .players li .kick {
+    float:                  right;
+    visibility:             hidden;
+}
+.game-tablet .players li:hover .kick {
+    visibility:             visible;
+}
+.game-tablet .actions {
+    padding:                0;
+    margin:                 0;
+    position:               absolute;
+    bottom:                 10px;
+    left:                   10px;
+}
+.game-tablet .actions a {
+    display:                none;
+}
+#game {
+    max-width:              802px;
+    padding:                0 0 25px 0;
+}
+#game-canvas {
+}
+

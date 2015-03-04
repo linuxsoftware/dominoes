@@ -1,0 +1,4 @@
+
+Re-minimize and re-gzip autobahn, fabric, jquery, and jquery-ui???
+
+Better mocking.  Decide between unittest.mock and flexmock
